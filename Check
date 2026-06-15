@@ -1,0 +1,35 @@
+Problem
+
+Recommended Action
+
+Idle DBs
+
+Stop or delete
+
+Large instances
+
+Downsize
+
+Multi-AZ enabled in sandbox
+
+Disable
+
+Provisioned IOPS
+
+Move to gp3
+
+Unused read replicas
+
+Remove
+
+Old snapshots
+
+Delete
+
+24/7 running databases
+
+Schedule stop/start
+
+Old engine versions
+
+Consolidate/upgrade
