@@ -1,0 +1,57 @@
+Sandbox & Classroom Cost Optimization Proposal Script
+Introduction
+"Today I want to walk through a proposal for optimizing costs in our AWS Sandbox and Classroom environments.
+While reviewing the Sandbox account costs, I found that a significant portion of the spend is coming from resources that appear to be underutilized or no longer actively used. The largest contributors were RDS and networking-related services, and some databases showed little to no CPU utilization.
+The goal of this proposal is to introduce lifecycle management so that resources are automatically tracked, monitored, and eventually cleaned up when they are no longer needed." [Sandbox_an...n_Proposal | Word]
+
+Current Challenges
+"Today, when resources are created in Sandbox or Classroom environments, there is no automated way to determine who owns them, when they should expire, or whether they are still needed.
+As a result, resources can remain deployed for months after testing is complete, which increases monthly cloud spend and makes ongoing management more difficult." [Sandbox_an...n_Proposal | Word]
+
+Proposed Solution
+"The proposal introduces an Automated Lifecycle Management process.
+The idea is simple: every resource created in Sandbox or Classroom environments becomes part of a lifecycle process from day one.
+Instead of manually tracking resources, we'll use automated tagging and lifecycle controls to manage them throughout their lifespan." [Sandbox_an...n_Proposal | Word]
+
+Phase 1 – Step 1
+"The first step is automated tagging.
+Whenever a resource is created, it will automatically receive lifecycle-related tags such as:
+
+ExpiresOn
+LifecycleState
+OwnerEmail
+
+These tags provide ownership information and define how resources will be managed going forward." [Sandbox_an...n_Proposal | Word]
+
+Phase 1 – Step 2
+"The second step is onboarding existing resources.
+We'll scan the current environment, apply lifecycle tags where needed, and identify resources that may be idle or no longer required.
+At this stage we're primarily establishing visibility and governance. The onboarding process itself doesn't automatically delete resources." [Sandbox_an...n_Proposal | Word]
+
+Risk Mitigation
+"I want to emphasize that the proposal takes a cautious approach.
+Before any destructive action is taken, backups or snapshots are performed.
+The onboarding process only applies tags and improves visibility. Any future deletion activities would go through defined lifecycle processes and review steps." [Sandbox_an...n_Proposal | Word]
+
+Future Phases
+"Once the tagging and onboarding foundation is in place, future phases will introduce additional automation.
+These phases include:
+
+Lifecycle monitoring
+Expiration notifications
+Resource quarantine
+Automated cleanup after review
+Scheduled stop/start operations
+Expansion into Classroom environments after successful Sandbox validation" [Sandbox_an...n_Proposal | Word]
+
+
+Expected Benefits
+"The primary benefit is cost reduction.
+The analysis identified several opportunities to eliminate unnecessary spend through resource cleanup, rightsizing, and lifecycle controls.
+In addition to cost savings, we'll gain better ownership tracking, improved governance, and a repeatable process that prevents future resource accumulation." [Sandbox_an...n_Proposal | Word]
+
+Recommendation / Closing
+"My recommendation is to start with Phase 1 by implementing automated tagging and onboarding existing resources into the lifecycle management system.
+This gives us immediate visibility and establishes the foundation for future automation while minimizing operational risk.
+Once we've validated the results in Sandbox, we can evaluate expanding the same approach to Classroom environments."
+"That's the proposal. I'd be happy to answer any questions or discuss any concerns around implementation, governance, or rollout." [Sandbox_an...n_Proposal | Word]
